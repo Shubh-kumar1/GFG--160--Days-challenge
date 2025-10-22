@@ -1,15 +1,22 @@
-class Solution {
-    public static boolean prime(int n) {
+import java.util.*;
+
+public class Solution {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         if(n<=1){
-            return false;
+            System.out.print("False");
+            return;
+            
         }
-        // Write your code here
-        for(int i=2;i<n; i++){
-            if(n%i==0){
-                return false;
+        for(int i=2; i<n; i++){
+            if(n % i == 0){
+                System.out.print("False");
+                return;
             }
             
         }
-        return true;
+        
+         System.out.print("True");
     }
 }
