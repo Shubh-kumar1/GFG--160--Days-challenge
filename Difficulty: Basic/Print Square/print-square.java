@@ -1,20 +1,23 @@
-// User function Template for Java
-class Solution {
-    public static void square(int s) {
-        for(int i=0; i<s; i++){
-            for(int j=0; j<s; j++){
-                if(i==0 || i==s-1|| j==0 || j==s-1){
-                    System.out.print("*");
+import java.util.*;
+
+public class Solution {
+    public static void solve() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n; j++){
+                if(i == 1 || i==n || j==1 || j==n){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
                 }
-                else{
-                    System.out.print(" ");
-                }
-                if (j < s - 1) {
-                    System.out.print(" ");
-                }
+                
             }
             System.out.println();
         }
+        
+        
+        
         
     }
 }
